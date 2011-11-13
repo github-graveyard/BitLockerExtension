@@ -23,7 +23,7 @@ namespace BitLockerExtension {
 					throw new Exception("Failed to open or create \"Drive\\shell\\lock-bde\"");
 
 				//Write Caption
-				lockHive.SetValue(string.Empty, "Laufwerk sperren");
+				lockHive.SetValue(string.Empty, "Lock Drive");
 
 				//This Value defines the Moment when the new ContextMenu entry will be displayed.
 				//In this case, the Entry should only show up, the the selected drive is encrypted with bitlocker
